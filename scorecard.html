@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorecard</title>
+    <style>
+        body {
+            background: #f4f6fa;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .scorecard {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            padding: 32px 40px;
+            min-width: 340px;
+            margin-top: 24px;
+        }
+        .team-name h2 {
+            color: #1976d2;
+            margin-bottom: 8px;
+        }
+        .score h2 {
+            color: #388e3c;
+            font-size: 2.2rem;
+            margin: 0 0 8px 0;
+        }
+        .overs h2 {
+            color: #757575;
+            font-size: 1.1rem;
+            margin: 0 0 16px 0;
+        }
+        .players-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+        .players-table th, .players-table td {
+            padding: 8px 16px;
+            text-align: left;
+        }
+        .players-table th {
+            background: #e3f2fd;
+            color: #1976d2;
+            font-weight: 600;
+        }
+        .players-table tr:nth-child(even) {
+            background: #f8fafc;
+        }
+        .players-table td.score {
+            text-align: right;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+        <h1>Scorecard</h1>
+       <h2> India VS Australia</h2>
+       <h1>Target for India is 250</h1>
+       <div class="scorecard">
+        <div class="team-name">
+            <h2>India</h2>
+        </div>
+        <div class="score">
+            <h2>160/2</h2>
+        </div>
+        <div class="overs">
+            <h2>15 overs</h2>
+        </div>
+        <table class="players-table">
+            <tr>
+                <th>Player</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>Rohit Sharma</td>
+                <td class="score">50</td>
+            </tr>
+            <tr>
+                <td>Virat Kohli</td>
+                <td class="score">40</td>
+            </tr>
+        </table>
+       </div>
+    </div>
+</body>
+</html>
